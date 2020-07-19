@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Home - Lukasz Zbozen</title>
+	<!-- Declare external CSS stylesheet (foldername/stylesheetfile.css) -->
+	<link rel="stylesheet" href="stylesheet/style.css">
+	
+	<!-- Declare external javascript (folder/filename)  -->
+	<script src="javascript/js.js"></script>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+	.link {
+	color: #fff;
+	text-decoration: none;
+	padding:10px 20px;
+	}
+
+    .social {
+		height: 60px;
+	}
+	
+	.social:hover {
+		/* combine 2 colours with hsl and reduce opacity */
+		background: linear-gradient(135deg, rgba(255,255,255) 0%,rgba(255,255,255,0) 100%);
+		animation: boxShadowFade 0.8s ease-out;	
+		border-radius: 5px;
+	}
+	
+	</style>
+	
+	</head>
+	
+	<body>
+	<!-- background animation -->
+		<div class="stars">
+		</div>
+		<!-- background animation end -->	
+		
+		<header class="header">
+		<div id="logo">Lukasz Zbozen</div>
+			  <input class="menu-btn" type="checkbox" id="menu-btn" />
+			  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+		<ul class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="work.html">Work</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		  </ul>
+		</header>
+	
+		
+		
+		<div class="main">
+				<div id="contractMe">
+				<h2>Contact me:</h2>
+				<h3>Email:</h3>
+				<a class="link" href="mailto:lucaszbozen@hotmail.com"><img src="images/email.png" class="social" alt="Email address">  lucaszbozen@hotmail.com</a>	
+				<br><br>
+				<hr>
+				<h3>LinkedIn:</h3>
+				<a class="link"  href="https://www.linkedin.com/in/lukasz-zbozen-84413a152/"><img src="images/linkedin.png" class="social" alt="LinkedIn link"></a>
+				
+				<br><br><hr>
+				<h3>Github:</h3>
+				<a class="link" alt="GitHub" href="https://github.com/LukaszZbozen"><img src="images/github.png" class="social" alt="Github link"></a>
+				</div>
+	
+		</div>
+	<div id="footer">
+	<p>	&copy; Lukasz Zbozen 2020.</p>
+	</div>
+
+	</body>
+</html>

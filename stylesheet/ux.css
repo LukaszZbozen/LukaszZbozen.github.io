@@ -1,0 +1,224 @@
+body {
+  background-color: #1c1d25;
+  font: 10px/13px "Lucida Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+#dissApp {
+  position: relative;
+  left: 10%;
+}
+
+#uxTitle {
+  text-align: center;
+}
+
+/*ZOOM IN IMAGES*/
+
+/* generic css */
+
+/*Image 2*/
+
+.view2 {
+  margin: 10px;
+  float: left;
+  border: 10px solid #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+  background: #fff url(../images/bgimg.jpg) no-repeat center center;
+}
+
+.view2 .mask2,
+.view2 .content {
+  margin: 0px;
+  width: 380px;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.view2 img {
+  display: block;
+  position: relative;
+}
+
+.view2 h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+  font-family: Century Gothic;
+  padding: 10px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  margin: 80px 0 0 0;
+}
+
+.box2 {
+  float: left;
+  position: relative;
+  width: 20%;
+  padding-bottom: 20%;
+}
+
+.boxInner2 {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+.boxInner2 img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  /* Smartphone view: 1 tile */
+  .box2 {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+  /* Tablet view: 2 tiles */
+  .box2 {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+  /* Small desktop / ipad view: 3 tiles */
+  .box2 {
+    width: 33.3%;
+    padding-bottom: 33.3%;
+  }
+}
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+  /* Medium desktop: 4 tiles */
+  .box2 {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+}
+
+/****** image hover2 ******/
+
+.box2 .mask2 {
+  opacity: 0;
+  background-color: rgba(20, 1, 80, 0.44);
+  transition: all 0.4s ease-in-out;
+}
+
+.box2 h2 {
+  transform: translateY(-100px);
+  opacity: 0;
+  font-family: Century Gothic;
+  transition: all 0.2s ease-in-out;
+}
+
+.box2 p {
+  transform: translateY(100px);
+  opacity: 0;
+  font-family: Century Gothic;
+  transition: all 0.2s linear;
+}
+
+.box2 a.info2 {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.box2 * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.box2 {
+  position: relative;
+  width: 400px;
+  height: 0;
+  display: inline-block;
+  margin: 15px;
+  overflow: hidden;
+  background: #fff;
+  border: 0px solid #fff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 50px 2px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.box2 a {
+  text-decoration: none;
+}
+
+.box2 img {
+  margin: 0px 0px 0px 0px;
+}
+
+/*** effect - shadow 2 ***/
+
+.box2:hover .mask2 {
+  opacity: 1;
+}
+
+.box2:hover h2,
+.box2:hover p,
+.box2:hover a.info2 {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.box2:hover p {
+  transition-delay: 0.1s;
+}
+
+.box2:hover a.info2 {
+  transition-delay: 0.2s;
+}
+
+.box2 {
+  -webkit-box-shadow: 0 128px 116px -126px black;
+  -moz-box-shadow: 0 128px 116px -126px black;
+  box-shadow: 0 28px 16px -26px black;
+}
+
+.box2:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+
+  -webkit-box-shadow: 0 58px 36px -56px black;
+  -moz-box-shadow: 0 58px 36px -56px black;
+  box-shadow: 0 58px 36px -56px black;
+}
+
+.box2 {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+
+.box2:hover {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
